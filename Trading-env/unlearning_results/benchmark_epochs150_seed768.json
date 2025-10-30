@@ -1,0 +1,18 @@
+{
+    "unlearn_epochs": 150,
+    "seed": 768,
+    "unlearn_time_minutes": 51.96011294523875,
+    "corruption_level": 0.1,
+    "metrics": {
+        "forget_degradation_percent": -85.62639488119541,
+        "retain_preservation_percent": -13.349294397669501
+    },
+    "original_performance": {
+        "forget_set_mean": -0.5739444215112364,
+        "retain_set_mean": 1.3310138438698262
+    },
+    "unlearned_performance": {
+        "forget_set_mean": -0.08249650474943243,
+        "retain_set_mean": -0.1776809564919202
+    }
+}

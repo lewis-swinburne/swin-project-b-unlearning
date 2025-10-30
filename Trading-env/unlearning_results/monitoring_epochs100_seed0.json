@@ -1,0 +1,815 @@
+{
+    "unlearn_epochs": 100,
+    "seed": 0,
+    "overall_stats": {
+        "start_timestamp": "2025-10-30T04:43:41.096853",
+        "end_timestamp": "2025-10-30T05:12:08.906511",
+        "total_duration_seconds": 1707.81,
+        "peak_cpu_percent": 69.8,
+        "peak_memory_mb": 715.02,
+        "average_cpu_percent": 60.11,
+        "average_memory_mb": 715.02
+    },
+    "epoch_logs": [
+        {
+            "epoch": 1,
+            "timestamp": "2025-10-30T04:43:58.189138",
+            "elapsed_time_seconds": 17.09,
+            "epoch_duration_seconds": 16.99,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 2,
+            "timestamp": "2025-10-30T04:44:15.084278",
+            "elapsed_time_seconds": 33.99,
+            "epoch_duration_seconds": 16.79,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 3,
+            "timestamp": "2025-10-30T04:44:31.879603",
+            "elapsed_time_seconds": 50.78,
+            "epoch_duration_seconds": 16.69,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 4,
+            "timestamp": "2025-10-30T04:44:48.695523",
+            "elapsed_time_seconds": 67.6,
+            "epoch_duration_seconds": 16.72,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 5,
+            "timestamp": "2025-10-30T04:45:05.612590",
+            "elapsed_time_seconds": 84.52,
+            "epoch_duration_seconds": 16.82,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 6,
+            "timestamp": "2025-10-30T04:45:22.459972",
+            "elapsed_time_seconds": 101.36,
+            "epoch_duration_seconds": 16.75,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 7,
+            "timestamp": "2025-10-30T04:45:39.308679",
+            "elapsed_time_seconds": 118.21,
+            "epoch_duration_seconds": 16.75,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 8,
+            "timestamp": "2025-10-30T04:45:56.631259",
+            "elapsed_time_seconds": 135.53,
+            "epoch_duration_seconds": 17.22,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 9,
+            "timestamp": "2025-10-30T04:46:13.567942",
+            "elapsed_time_seconds": 152.47,
+            "epoch_duration_seconds": 16.84,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 10,
+            "timestamp": "2025-10-30T04:46:30.387791",
+            "elapsed_time_seconds": 169.29,
+            "epoch_duration_seconds": 16.72,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 11,
+            "timestamp": "2025-10-30T04:46:47.239467",
+            "elapsed_time_seconds": 186.14,
+            "epoch_duration_seconds": 16.75,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 12,
+            "timestamp": "2025-10-30T04:47:04.119108",
+            "elapsed_time_seconds": 203.02,
+            "epoch_duration_seconds": 16.78,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 13,
+            "timestamp": "2025-10-30T04:47:21.349037",
+            "elapsed_time_seconds": 220.25,
+            "epoch_duration_seconds": 17.13,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 14,
+            "timestamp": "2025-10-30T04:47:38.412060",
+            "elapsed_time_seconds": 237.32,
+            "epoch_duration_seconds": 16.96,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 15,
+            "timestamp": "2025-10-30T04:47:55.754259",
+            "elapsed_time_seconds": 254.66,
+            "epoch_duration_seconds": 17.24,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 16,
+            "timestamp": "2025-10-30T04:48:12.780453",
+            "elapsed_time_seconds": 271.68,
+            "epoch_duration_seconds": 16.93,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 17,
+            "timestamp": "2025-10-30T04:48:29.596809",
+            "elapsed_time_seconds": 288.5,
+            "epoch_duration_seconds": 16.72,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 18,
+            "timestamp": "2025-10-30T04:48:46.474846",
+            "elapsed_time_seconds": 305.38,
+            "epoch_duration_seconds": 16.78,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 19,
+            "timestamp": "2025-10-30T04:49:03.352018",
+            "elapsed_time_seconds": 322.26,
+            "epoch_duration_seconds": 16.78,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 20,
+            "timestamp": "2025-10-30T04:49:20.227123",
+            "elapsed_time_seconds": 339.13,
+            "epoch_duration_seconds": 16.77,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 21,
+            "timestamp": "2025-10-30T04:49:37.059534",
+            "elapsed_time_seconds": 355.96,
+            "epoch_duration_seconds": 16.73,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 22,
+            "timestamp": "2025-10-30T04:49:54.241126",
+            "elapsed_time_seconds": 373.14,
+            "epoch_duration_seconds": 17.08,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 23,
+            "timestamp": "2025-10-30T04:50:11.178181",
+            "elapsed_time_seconds": 390.08,
+            "epoch_duration_seconds": 16.84,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 24,
+            "timestamp": "2025-10-30T04:50:28.004914",
+            "elapsed_time_seconds": 406.91,
+            "epoch_duration_seconds": 16.73,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 25,
+            "timestamp": "2025-10-30T04:50:44.862583",
+            "elapsed_time_seconds": 423.77,
+            "epoch_duration_seconds": 16.76,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 26,
+            "timestamp": "2025-10-30T04:51:01.713365",
+            "elapsed_time_seconds": 440.62,
+            "epoch_duration_seconds": 16.75,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 27,
+            "timestamp": "2025-10-30T04:51:18.539447",
+            "elapsed_time_seconds": 457.44,
+            "epoch_duration_seconds": 16.73,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 28,
+            "timestamp": "2025-10-30T04:51:35.388962",
+            "elapsed_time_seconds": 474.29,
+            "epoch_duration_seconds": 16.75,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 29,
+            "timestamp": "2025-10-30T04:51:52.626781",
+            "elapsed_time_seconds": 491.53,
+            "epoch_duration_seconds": 17.14,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 30,
+            "timestamp": "2025-10-30T04:52:09.695736",
+            "elapsed_time_seconds": 508.6,
+            "epoch_duration_seconds": 16.97,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 31,
+            "timestamp": "2025-10-30T04:52:26.724255",
+            "elapsed_time_seconds": 525.63,
+            "epoch_duration_seconds": 16.93,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 32,
+            "timestamp": "2025-10-30T04:52:43.823517",
+            "elapsed_time_seconds": 542.73,
+            "epoch_duration_seconds": 17.0,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 33,
+            "timestamp": "2025-10-30T04:53:00.945431",
+            "elapsed_time_seconds": 559.85,
+            "epoch_duration_seconds": 17.02,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 34,
+            "timestamp": "2025-10-30T04:53:18.023066",
+            "elapsed_time_seconds": 576.93,
+            "epoch_duration_seconds": 16.98,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 35,
+            "timestamp": "2025-10-30T04:53:35.185667",
+            "elapsed_time_seconds": 594.09,
+            "epoch_duration_seconds": 17.06,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 36,
+            "timestamp": "2025-10-30T04:53:52.529936",
+            "elapsed_time_seconds": 611.43,
+            "epoch_duration_seconds": 17.24,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 37,
+            "timestamp": "2025-10-30T04:54:10.036315",
+            "elapsed_time_seconds": 628.94,
+            "epoch_duration_seconds": 17.41,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 38,
+            "timestamp": "2025-10-30T04:54:27.277669",
+            "elapsed_time_seconds": 646.18,
+            "epoch_duration_seconds": 17.14,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 39,
+            "timestamp": "2025-10-30T04:54:44.520277",
+            "elapsed_time_seconds": 663.42,
+            "epoch_duration_seconds": 17.14,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 40,
+            "timestamp": "2025-10-30T04:55:01.785689",
+            "elapsed_time_seconds": 680.69,
+            "epoch_duration_seconds": 17.16,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 41,
+            "timestamp": "2025-10-30T04:55:18.820580",
+            "elapsed_time_seconds": 697.72,
+            "epoch_duration_seconds": 16.93,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 42,
+            "timestamp": "2025-10-30T04:55:35.897154",
+            "elapsed_time_seconds": 714.8,
+            "epoch_duration_seconds": 16.98,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 43,
+            "timestamp": "2025-10-30T04:55:53.165478",
+            "elapsed_time_seconds": 732.07,
+            "epoch_duration_seconds": 17.17,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 44,
+            "timestamp": "2025-10-30T04:56:10.319878",
+            "elapsed_time_seconds": 749.22,
+            "epoch_duration_seconds": 17.05,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 45,
+            "timestamp": "2025-10-30T04:56:27.158551",
+            "elapsed_time_seconds": 766.06,
+            "epoch_duration_seconds": 16.74,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 46,
+            "timestamp": "2025-10-30T04:56:44.325099",
+            "elapsed_time_seconds": 783.23,
+            "epoch_duration_seconds": 17.07,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 47,
+            "timestamp": "2025-10-30T04:57:01.430141",
+            "elapsed_time_seconds": 800.33,
+            "epoch_duration_seconds": 17.0,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 48,
+            "timestamp": "2025-10-30T04:57:18.505295",
+            "elapsed_time_seconds": 817.41,
+            "epoch_duration_seconds": 16.97,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 49,
+            "timestamp": "2025-10-30T04:57:35.619183",
+            "elapsed_time_seconds": 834.52,
+            "epoch_duration_seconds": 17.01,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 50,
+            "timestamp": "2025-10-30T04:57:53.470788",
+            "elapsed_time_seconds": 852.37,
+            "epoch_duration_seconds": 17.75,
+            "cpu_percent": 49.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 51,
+            "timestamp": "2025-10-30T04:58:10.810143",
+            "elapsed_time_seconds": 869.71,
+            "epoch_duration_seconds": 17.24,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 52,
+            "timestamp": "2025-10-30T04:58:28.077419",
+            "elapsed_time_seconds": 886.98,
+            "epoch_duration_seconds": 17.17,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 53,
+            "timestamp": "2025-10-30T04:58:45.177504",
+            "elapsed_time_seconds": 904.08,
+            "epoch_duration_seconds": 17.0,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 54,
+            "timestamp": "2025-10-30T04:59:02.298458",
+            "elapsed_time_seconds": 921.2,
+            "epoch_duration_seconds": 17.02,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 55,
+            "timestamp": "2025-10-30T04:59:19.168921",
+            "elapsed_time_seconds": 938.07,
+            "epoch_duration_seconds": 16.77,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 56,
+            "timestamp": "2025-10-30T04:59:36.071796",
+            "elapsed_time_seconds": 954.97,
+            "epoch_duration_seconds": 16.8,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 57,
+            "timestamp": "2025-10-30T04:59:53.346684",
+            "elapsed_time_seconds": 972.25,
+            "epoch_duration_seconds": 17.17,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 58,
+            "timestamp": "2025-10-30T05:00:10.399082",
+            "elapsed_time_seconds": 989.3,
+            "epoch_duration_seconds": 16.95,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 59,
+            "timestamp": "2025-10-30T05:00:27.397824",
+            "elapsed_time_seconds": 1006.3,
+            "epoch_duration_seconds": 16.9,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 60,
+            "timestamp": "2025-10-30T05:00:44.516659",
+            "elapsed_time_seconds": 1023.42,
+            "epoch_duration_seconds": 17.02,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 61,
+            "timestamp": "2025-10-30T05:01:01.638774",
+            "elapsed_time_seconds": 1040.54,
+            "epoch_duration_seconds": 17.02,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 62,
+            "timestamp": "2025-10-30T05:01:18.682566",
+            "elapsed_time_seconds": 1057.59,
+            "epoch_duration_seconds": 16.94,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 63,
+            "timestamp": "2025-10-30T05:01:35.750578",
+            "elapsed_time_seconds": 1074.65,
+            "epoch_duration_seconds": 16.97,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 64,
+            "timestamp": "2025-10-30T05:01:53.111557",
+            "elapsed_time_seconds": 1092.01,
+            "epoch_duration_seconds": 17.26,
+            "cpu_percent": 59.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 65,
+            "timestamp": "2025-10-30T05:02:10.250669",
+            "elapsed_time_seconds": 1109.15,
+            "epoch_duration_seconds": 17.04,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 66,
+            "timestamp": "2025-10-30T05:02:27.264593",
+            "elapsed_time_seconds": 1126.17,
+            "epoch_duration_seconds": 16.91,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 67,
+            "timestamp": "2025-10-30T05:02:44.329051",
+            "elapsed_time_seconds": 1143.23,
+            "epoch_duration_seconds": 16.96,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 68,
+            "timestamp": "2025-10-30T05:03:01.440460",
+            "elapsed_time_seconds": 1160.34,
+            "epoch_duration_seconds": 17.01,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 69,
+            "timestamp": "2025-10-30T05:03:18.482624",
+            "elapsed_time_seconds": 1177.39,
+            "epoch_duration_seconds": 16.94,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 70,
+            "timestamp": "2025-10-30T05:03:35.486063",
+            "elapsed_time_seconds": 1194.39,
+            "epoch_duration_seconds": 16.9,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 71,
+            "timestamp": "2025-10-30T05:03:52.905543",
+            "elapsed_time_seconds": 1211.81,
+            "epoch_duration_seconds": 17.32,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 72,
+            "timestamp": "2025-10-30T05:04:10.250483",
+            "elapsed_time_seconds": 1229.15,
+            "epoch_duration_seconds": 17.24,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 73,
+            "timestamp": "2025-10-30T05:04:27.220558",
+            "elapsed_time_seconds": 1246.12,
+            "epoch_duration_seconds": 16.87,
+            "cpu_percent": 59.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 74,
+            "timestamp": "2025-10-30T05:04:44.346027",
+            "elapsed_time_seconds": 1263.25,
+            "epoch_duration_seconds": 17.03,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 75,
+            "timestamp": "2025-10-30T05:05:01.487439",
+            "elapsed_time_seconds": 1280.39,
+            "epoch_duration_seconds": 17.04,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 76,
+            "timestamp": "2025-10-30T05:05:18.486506",
+            "elapsed_time_seconds": 1297.39,
+            "epoch_duration_seconds": 16.9,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 77,
+            "timestamp": "2025-10-30T05:05:35.524192",
+            "elapsed_time_seconds": 1314.43,
+            "epoch_duration_seconds": 16.94,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 78,
+            "timestamp": "2025-10-30T05:05:52.863174",
+            "elapsed_time_seconds": 1331.77,
+            "epoch_duration_seconds": 17.24,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 79,
+            "timestamp": "2025-10-30T05:06:09.980586",
+            "elapsed_time_seconds": 1348.88,
+            "epoch_duration_seconds": 17.02,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 80,
+            "timestamp": "2025-10-30T05:06:26.970621",
+            "elapsed_time_seconds": 1365.87,
+            "epoch_duration_seconds": 16.89,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 81,
+            "timestamp": "2025-10-30T05:06:43.933469",
+            "elapsed_time_seconds": 1382.84,
+            "epoch_duration_seconds": 16.86,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 82,
+            "timestamp": "2025-10-30T05:07:00.799836",
+            "elapsed_time_seconds": 1399.7,
+            "epoch_duration_seconds": 16.77,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 83,
+            "timestamp": "2025-10-30T05:07:18.047778",
+            "elapsed_time_seconds": 1416.95,
+            "epoch_duration_seconds": 17.15,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 84,
+            "timestamp": "2025-10-30T05:07:35.113563",
+            "elapsed_time_seconds": 1434.02,
+            "epoch_duration_seconds": 16.97,
+            "cpu_percent": 59.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 85,
+            "timestamp": "2025-10-30T05:07:52.486074",
+            "elapsed_time_seconds": 1451.39,
+            "epoch_duration_seconds": 17.27,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 86,
+            "timestamp": "2025-10-30T05:08:09.570549",
+            "elapsed_time_seconds": 1468.47,
+            "epoch_duration_seconds": 16.98,
+            "cpu_percent": 59.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 87,
+            "timestamp": "2025-10-30T05:08:26.611148",
+            "elapsed_time_seconds": 1485.51,
+            "epoch_duration_seconds": 16.94,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 88,
+            "timestamp": "2025-10-30T05:08:43.669597",
+            "elapsed_time_seconds": 1502.57,
+            "epoch_duration_seconds": 16.96,
+            "cpu_percent": 59.9,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 89,
+            "timestamp": "2025-10-30T05:09:00.736367",
+            "elapsed_time_seconds": 1519.64,
+            "epoch_duration_seconds": 16.97,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 90,
+            "timestamp": "2025-10-30T05:09:17.787314",
+            "elapsed_time_seconds": 1536.69,
+            "epoch_duration_seconds": 16.95,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 91,
+            "timestamp": "2025-10-30T05:09:34.871625",
+            "elapsed_time_seconds": 1553.77,
+            "epoch_duration_seconds": 16.98,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 92,
+            "timestamp": "2025-10-30T05:09:52.302171",
+            "elapsed_time_seconds": 1571.21,
+            "epoch_duration_seconds": 17.33,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 93,
+            "timestamp": "2025-10-30T05:10:09.356767",
+            "elapsed_time_seconds": 1588.26,
+            "epoch_duration_seconds": 16.95,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 94,
+            "timestamp": "2025-10-30T05:10:26.358420",
+            "elapsed_time_seconds": 1605.26,
+            "epoch_duration_seconds": 16.9,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 95,
+            "timestamp": "2025-10-30T05:10:43.416396",
+            "elapsed_time_seconds": 1622.32,
+            "epoch_duration_seconds": 16.96,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 96,
+            "timestamp": "2025-10-30T05:11:00.457292",
+            "elapsed_time_seconds": 1639.36,
+            "epoch_duration_seconds": 16.94,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 97,
+            "timestamp": "2025-10-30T05:11:17.525783",
+            "elapsed_time_seconds": 1656.43,
+            "epoch_duration_seconds": 16.97,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 98,
+            "timestamp": "2025-10-30T05:11:34.615133",
+            "elapsed_time_seconds": 1673.52,
+            "epoch_duration_seconds": 16.99,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 99,
+            "timestamp": "2025-10-30T05:11:51.955633",
+            "elapsed_time_seconds": 1690.86,
+            "epoch_duration_seconds": 17.24,
+            "cpu_percent": 69.8,
+            "memory_mb": 715.02
+        },
+        {
+            "epoch": 100,
+            "timestamp": "2025-10-30T05:12:08.906469",
+            "elapsed_time_seconds": 1707.81,
+            "epoch_duration_seconds": 16.85,
+            "cpu_percent": 59.8,
+            "memory_mb": 715.02
+        }
+    ]
+}
