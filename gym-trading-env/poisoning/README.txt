@@ -64,3 +64,5 @@ Ideal run order:
 0.5: trading_download // get financial data if not already downloaded
 1: trading_learning // conduct learning
 2: poisoning_current // conduct unlearning
+
+important note: if only reduced to these 3 files, some directories may not create themselves and the script will throw an error. keep folder structure to prevent errors.
