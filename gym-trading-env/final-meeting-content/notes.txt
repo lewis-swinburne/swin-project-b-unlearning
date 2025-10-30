@@ -1,0 +1,33 @@
+- final run: 3650 episodes
+
+- plotted average rewards
+--showed that training improved substaintially over the first 500 episodes
+but by episode 1000 had stagnated and held that average reward until end of training run (3650 episodes). 
+this could be due to singular training data, and agent learning best action to take was holding?
+[1.png]
+
+- plotted agent vs BTC market performance [2.png]
+- plotted agent vs ETH market performance [3.png]
+[2.png & 3.png]
+
+--the agent, tested at it's 3650 version, performed well at BTC and concerningly good at ETH given it only had one run.
+There would be an implementation of rewards still - so perhaps the agent is very sensitive to these rewards and was able to adjust after just a single run?
+
+- ran unlearning: --epochs 10 25 50 75 100 150 200 --seeds 0 1 42 123 768 --corruption 0.1
+- best amount seems to be 100? but unlearning still suffers from high variability
+
+- plotted unlearned agent vs BTC
+- plotted unlearned agent vs ETH
+Highlights a major error with the unlearning algorithm. the more epochs, it appears that the agent is just being retrained again? 
+a low epoch value seems to crash performance completely, but comparing later epochs the performance mirrors the market performance.
+factors: script & corruption not working properly /OR/ too many training episodes (increased to 30 due to previously noisy results)
+i'm not confident enough in the content to be able to make a conclusion that i'd be happy with - other than i think unlearning is not being implemented properly.
+[4.png, 5.png & 6.png]
+
+- benchmarking / screenshot of .CSV
+For unlearning, I configured the script to capture the start & end time for each unlearning session & seed, as well as the duration of the session.
+The script also captures the peak CPU usage (in percentage) and peak RAM usage (in MB), as well as the average amounts for each session. 
+I suspect that due to no constraints being implemented, the CPU is maxing out (this was confirmed by the system monitor) and is the major bottleneck. 
+GPU is not a factor due to being unsupported (an error i was unable to solve - I think it relates to my script being run on linux.
+I didn't implement benchmarking for training, but 1000 episodes averaged around 24 hours with my components.
+[7.png]
