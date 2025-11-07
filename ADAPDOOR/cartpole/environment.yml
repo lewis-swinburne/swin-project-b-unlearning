@@ -1,0 +1,14 @@
+name: rl-unlearn
+channels:
+- conda-forge
+dependencies:
+- python=3.10
+- pip
+- pip:
+- stable-baselines3>=2.0.0
+- gymnasium
+- numpy
+- pandas
+- matplotlib
+- tqdm
+- pytest
