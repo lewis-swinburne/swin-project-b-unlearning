@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >	
+        <meta name="description" content="ICT30018 - Project B" >
+        <meta name="keywords"    content="Highway, Adapdoor, Trading" >
+        <meta name="author"      content="102089577 / Lewis John Basford" >
+        <link rel="stylesheet" href="css/style.css">
+        <title>Project B - Group 11</title>
+    </head>
+    <body>
+        <!-- Top Navbar -->
+        <header>
+            <div id="logo"> <!-- website logo -->
+                    <p>Project B - Highway Environment</p> 
+            </div>
+            <nav class="vscode-navbar">
+                <a class="tab" href="index.html"><span>HOME</span></a>
+                <a class="tab" href="highway-jason.html"><span>HIGHWAY 1</span></a>
+                <a class="tab active" href="highway-kalana.html"><span>HIGHWAY 2</span></a>
+                <a class="tab" href="anaconda.html"><span>ANACONDA</span></a>
+                <a class="tab" href="trading.html"><span>TRADING</span></a>
+            </nav>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+    
+            <!-- Vertical Sidebar -->
+            <aside class="side-nav">
+                <button class="side-btn active" data-section="trained">Trained Agent</button>
+                <button class="side-btn" data-section="decremental">Decremental Applied</button>
+                <button class="side-btn" data-section="benchmarking">Benchmarking Statistics</button>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="content">
+                <!-- Trained Section -->
+                <section id="trained" class="section active">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <video src="images/highway-kalana/trained/Racetrack 2.mp4" controls autoplay preload="auto" class="active gallery-img"></video>
+                                <video src="images/highway-kalana/trained/Racetrack 3.mp4" controls autoplay preload="auto" class="gallery-img"></video>
+                                <video src="images/highway-kalana/trained/Racetrack 1.mp4" controls autoplay preload="auto" class="gallery-img"></video>
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>Device: Macbook Pro</li>
+                                <li>CPU: M3</li>
+                                <li>RAM: 8 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            The highway environment simulates a multi-lane highway where an autonomous agent must navigate through traffic while adhering to traffic rules and avoiding collisions.<br>
+                            The training process attempted to optimize the agent's decision-making capabilities to ensure safe and efficient driving behavior.<br>
+                            This variation adds turns to the highway.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Decremental Section -->
+                <section id="decremental" class="section">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <video src="images/highway-kalana/decremental/Racetrack decremental 1.mp4" controls autoplay preload="auto" class="active gallery-img"></video>
+                                <video src="images/highway-kalana/decremental/Racetrack decremental 2.mp4" controls autoplay preload="auto" class="gallery-img"></video>
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>Device: Macbook Pro</li>
+                                <li>CPU: M3</li>
+                                <li>RAM: 8 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            A decremental attack involves systematically removing or degrading certain aspects of the agent's training data or environment to impair its performance.<br>
+                            
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Benchmarking Section -->
+                <section id="benchmarking" class="section">
+                    <div class="section-inner">
+                        <div class="benchmarking-table-container"> 
+                            <h3>Training Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- training -->
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>Step</th>
+                                        <th>CPU Usage (%)</th>
+                                        <th>RAM Usage (%)</th>
+                                        <th>Load Average (1m)</th>
+                                        <th>Load Average (5m)</th>
+                                        <th>Load Average (15m)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1761131748</td><td>512</td><td>14.9</td><td>84.7</td><td>2.889160156</td><td>3.003417969</td><td>3.305664063</td></tr>
+                                    <tr><td>1761131768</td><td>5120</td><td>10.6</td><td>84.1</td><td>2.618652344</td><td>2.936035156</td><td>3.274414063</td></tr>
+                                    <tr><td>1761131790</td><td>10240</td><td>20.7</td><td>86.4</td><td>3.018554688</td><td>3.004394531</td><td>3.288085938</td></tr>
+                                    <tr><td>1761131814</td><td>15872</td><td>74.1</td><td>85.3</td><td>3.091308594</td><td>3.01953125</td><td>3.286132813</td></tr>
+                                    <tr><td>1761131836</td><td>20480</td><td>7.4</td><td>85.2</td><td>3.013671875</td><td>3.014648438</td><td>3.276367188</td></tr>
+                                </tbody>
+                            </table>
+                            <h3>Decremental Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- decremental -->
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>Step</th>
+                                        <th>CPU Usage (%)</th>
+                                        <th>RAM Usage (%)</th>
+                                        <th>Load Average (1m)</th>
+                                        <th>Load Average (5m)</th>
+                                        <th>Load Average (15m)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1761131839</td><td>21248</td><td>11</td><td>83.2</td><td>2.932128906</td><td>2.997558594</td><td>3.268554688</td></tr>
+                                    <tr><td>1761131843</td><td>22016</td><td>19</td><td>81.9</td><td>2.932128906</td><td>2.997558594</td><td>3.268554688</td></tr>
+                                    <tr><td>1761131846</td><td>22784</td><td>4.8</td><td>81.8</td><td>2.9375</td><td>2.997558594</td><td>3.266601563</td></tr>
+                                    <tr><td>1761131849</td><td>23552</td><td>26.8</td><td>83.7</td><td>2.9375</td><td>2.997558594</td><td>3.266601563</td></tr>
+                                    <tr><td>1761131852</td><td>24320</td><td>34.6</td><td>84.8</td><td>2.862304688</td><td>2.980957031</td><td>3.258789063</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Text area -->
+                </section>
+            </main>
+
+        </div>
+        <script src="js/script.js"></script>
+        <footer>
+            <p>© 2025 Project B - Group 11</p>
+        </footer>
+    </body>
+</html>

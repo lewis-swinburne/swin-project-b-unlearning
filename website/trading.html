@@ -15,9 +15,11 @@
                     <p>Project B - Trading Environment</p> 
             </div>
             <nav class="vscode-navbar">
-                <span class="tab"><a href="index.html">HIGHWAY</a></span>
-                <span class="tab"><a href="adapdoor.html">ADAPDOOR</a></span>
-                <span class="tab active"><a href="trading.html">TRADING</a></span>
+                <a class="tab" href="index.html"><span>HOME</span></a>
+                <a class="tab" href="highway-jason.html"><span>HIGHWAY 1</span></a>
+                <a class="tab" href="highway-kalana.html"><span>HIGHWAY 2</span></a>
+                <a class="tab" href="anaconda.html"><span>ANACONDA</span></a>
+                <a class="tab active" href="trading.html"><span>TRADING</span></a>
             </nav>
         </header>
 
@@ -26,74 +28,107 @@
     
             <!-- Vertical Sidebar -->
             <aside class="side-nav">
-                <button class="side-btn active" data-section="trained">Trained / Unlearning</button>
-                <button class="side-btn" data-section="poisoned">Poisoned / Unlearned</button>
-                <button class="side-btn" data-section="decremental">Decremental</button>
+                <button class="side-btn active" data-section="trained">Trained Agent</button>
+                <button class="side-btn" data-section="poisoned">Poisoning Applied</button>
+                <button class="side-btn" data-section="benchmarking">Benchmarking Statistics</button>
             </aside>
 
             <!-- Main Content Area -->
             <main class="content">
-                <!-- Trained / Unlearning Section -->
+                <!-- Trained -->
                 <section id="trained" class="section active">
                     <div class="section-inner">
                         <div class="gallery-container">
                             <div class="gallery">
-                                <img src="images/highway/example1.png" class="active gallery-img" alt="Image 1">
-                                <img src="images/highway/example2.png" class="gallery-img" alt="Image 2">
-                                <img src="images/highway/example3.png" class="gallery-img" alt="Image 3">
+                                <img src="images/trading-lewis/trained/1 - average rewards per checkpoint.png" class="active gallery-img" alt="Image 1">
+                                <img src="images/trading-lewis/trained/2 - performance against BTC market.png" class="gallery-img" alt="Image 2">
+                                <img src="images/trading-lewis/trained/3 - performance against ETH market.png" class="gallery-img" alt="Image 3">
                             </div>
                             <button class="arrow left">&#10094;</button>
                             <button class="arrow right">&#10095;</button>
                             <div class="dots"></div>
                         </div>
-                        <p>[use this section to dotpoint benchmark data]</p>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>OS: Linux Mint 22.2</li>
+                                <li>CPU: Intel i5-8500</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
                     </div>
                     <!-- Text area -->
                     <div class="text-panel">
-                        <p>[trained - trading] [use this section to talk about the above images]</p>
+                        <p>
+                            For the trading environment, we trained an agent on historical cryptocurrency data to make buy, sell, or hold decisions based on market trends.<br>
+                            The first graph represents the average training reward of the trading agent.<br>
+                            The other two graphs show the agent's performance compared to the BTC-USD and ETH-USD historical data.
+                        </p>
                     </div>
                 </section>
 
-                <!-- Poisoned / Unlearned Section -->
+                <!-- Poisoned -->
                 <section id="poisoned" class="section">
                     <div class="section-inner">
                         <div class="gallery-container">
                             <div class="gallery">
-                                <img src="images/highway/example1.png" class="active gallery-img" alt="Image 1">
-                                <img src="images/highway/example2.png" class="gallery-img" alt="Image 2">
-                                <img src="images/highway/example3.png" class="gallery-img" alt="Image 3">
+                                <img src="images/trading-lewis/poisoning/unlearned_agent_vs_market-BTC-epoch25-seed1.png" class="active gallery-img" alt="Image 1">
+                                <img src="images/trading-lewis/poisoning/unlearned_agent_vs_market-BTC-epoch50-seed1.png" class="gallery-img" alt="Image 2">
+                                <img src="images/trading-lewis/poisoning/unlearned_agent_vs_market-BTC-epoch75-seed1.png" class="gallery-img" alt="Image 3">
                             </div>
                             <button class="arrow left">&#10094;</button>
                             <button class="arrow right">&#10095;</button>
                             <div class="dots"></div>
                         </div>
-                        <p>[use this section to dotpoint benchmark data]</p>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>OS: Linux Mint 22.2</li>
+                                <li>CPU: Intel i5-8500</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
                     </div>
                     <!-- Text area -->
                     <div class="text-panel">
-                        <p>[poisoned - trading] [use this section to talk about the above images]</p>
+                        <p>
+                            A poisoning attack is when malicious data is introduced into the training dataset to manipulate the learning process of the agent.<br>
+                            In our trading environment, we injected misleading market data during the training phase to degrade the agent's performance.<br>
+                            Due to many factors, including attempting to reduce noise, the poisoning did not have the desired effect.
+                        </p>
                     </div>
                 </section>
 
-                <!-- Decremental Section -->
-                <section id="decremental" class="section">
+                <!-- Benchmarking Section -->
+                <section id="benchmarking" class="section">
                     <div class="section-inner">
-                        <div class="gallery-container">
-                            <div class="gallery">
-                                <img src="images/highway/example1.png" class="active gallery-img" alt="Image 1">
-                                <img src="images/highway/example2.png" class="gallery-img" alt="Image 2">
-                                <img src="images/highway/example3.png" class="gallery-img" alt="Image 3">
-                            </div>
-                            <button class="arrow left">&#10094;</button>
-                            <button class="arrow right">&#10095;</button>
-                            <div class="dots"></div>
+                        <div class="benchmarking-table-container"> 
+                            <h3>Poisoning Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- poisoning -->
+                                <thead>
+                                    <tr>
+                                        <th>Epoch</th>
+                                        <th>Seed</th>
+                                        <th>Timestamp</th>
+                                        <th>Total Duration (sec)</th>
+                                        <th>Peak CPU Usage (%)</th>
+                                        <th>Peak RAM Usage (MB)</th>
+                                        <th>AVG CPU Usage (%)</th>
+                                        <th>AVG RAM Usage (MB)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>10</td><td>42</td><td>2025-10-29T23:43:23.244073</td><td>170.32</td><td>59.8</td><td>706.39</td><td>59.8</td><td>706.29</td></tr>
+                                    <tr><td>25</td><td>42</td><td>2025-10-30T00:27:59.970155</td><td>428.41</td><td>69.8</td><td>711.93</td><td>59.42</td><td>711.93</td></tr>
+                                    <tr><td>50</td><td>42</td><td>2025-10-30T01:39:24.657127</td><td>856.17</td><td>69.8</td><td>711.04</td><td>60.41</td><td>711.04</td></tr>
+                                    <tr><td>75</td><td>42</td><td>2025-10-30T03:26:18.292390</td><td>1316.95</td><td>69.8</td><td>710.41</td><td>59.94</td><td>710.41</td></tr>
+                                    <tr><td>100</td><td>42</td><td>2025-10-30T05:49:43.658572</td><td>1719.05</td><td>69.8</td><td>715.54</td><td>60.21</td><td>715.54</td></tr>
+                                    <tr><td>150</td><td>42</td><td>2025-10-30T09:02:41.156937</td><td>2581.92</td><td>69.9</td><td>713.17</td><td>59.94</td><td>713.17</td></tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <p>[use this section to dotpoint benchmark data]</p>
                     </div>
                     <!-- Text area -->
-                    <div class="text-panel">
-                        <p>[decremental - trading] [use this section to talk about the above images]</p>
-                    </div>
                 </section>
             </main>
 

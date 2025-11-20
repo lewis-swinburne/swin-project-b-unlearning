@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >	
+        <meta name="description" content="ICT30018 - Project B" >
+        <meta name="keywords"    content="Highway, Adapdoor, Trading" >
+        <meta name="author"      content="102089577 / Lewis John Basford" >
+        <link rel="stylesheet" href="css/style.css">
+        <title>Project B - Group 11</title>
+    </head>
+    <body>
+        <!-- Top Navbar -->
+        <header>
+            <div id="logo"> <!-- website logo -->
+                    <p>Project B - Highway Environment</p> 
+            </div>
+            <nav class="vscode-navbar">
+                <a class="tab" href="index.html"><span>HOME</span></a>
+                <a class="tab active" href="highway-jason.html"><span>HIGHWAY 1</span></a>
+                <a class="tab" href="highway-kalana.html"><span>HIGHWAY 2</span></a>
+                <a class="tab" href="anaconda.html"><span>ANACONDA</span></a>
+                <a class="tab" href="trading.html"><span>TRADING</span></a>
+            </nav>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+    
+            <!-- Vertical Sidebar -->
+            <aside class="side-nav">
+                <button class="side-btn active" data-section="trained">Trained Agent</button>
+                <button class="side-btn" data-section="poisoned">Poisoning Applied</button>
+                <button class="side-btn" data-section="decremental">Decremental Applied</button>
+                <button class="side-btn" data-section="benchmarking">Benchmarking Statistics</button>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="content">
+                <!-- Trained Section -->
+                <section id="trained" class="section active">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <img src="images/highway-jason/trained/episode_1.gif" class="active gallery-img" alt="Image 1">
+                                <img src="images/highway-jason/trained/episode_5.gif" class="gallery-img" alt="Image 2">
+                                <img src="images/highway-jason/trained/episode_10.gif" class="gallery-img" alt="Image 3">
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>Device: Windows 11 Home</li>
+                                <li>CPU: AMD Ryzen™ AI 9 HX 370</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            The highway environment simulates a multi-lane highway where an autonomous agent must navigate through traffic while adhering to traffic rules and avoiding collisions.<br>
+                            The training process attempted to optimize the agent's decision-making capabilities to ensure safe and efficient driving behavior.<br>
+                            This variation is a straight-road highway.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Poisoning Section -->
+                <section id="poisoned" class="section">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <img src="images/highway-jason/poisoning/episode_1.gif" class="active gallery-img" alt="Image 1">
+                                <img src="images/highway-jason/poisoning/episode_10.gif" class="gallery-img" alt="Image 2">
+                                <img src="images/highway-jason/poisoning/episode_15.gif" class="gallery-img" alt="Image 3">
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>Device: Windows 11 Home</li>
+                                <li>CPU: AMD Ryzen™ AI 9 HX 370</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            A poisoning attack is when malicious data is introduced into the training dataset to manipulate the learning process of the agent.<br>
+                            Here we attempted to see how the agent's performance and decision-making would be affected.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Decremental Section -->
+                <section id="decremental" class="section">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <img src="images/highway-jason/decremental/episode_1.gif" class="active gallery-img" alt="Decremental episode 1">
+                                <img src="images/highway-jason/decremental/episode_3.gif" class="gallery-img" alt="Decremental episode 3">
+                                <img src="images/highway-jason/decremental/episode_5.gif" class="gallery-img" alt="Decremental episode 5">
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>Device: Windows 11 Home</li>
+                                <li>CPU: AMD Ryzen™ AI 9 HX 370</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            A decremental attack involves systematically removing or degrading certain aspects of the agent's training data or environment to impair its performance.<br>
+                            
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Benchmarking Section -->
+                <section id="benchmarking" class="section">
+                    <div class="section-inner">
+                        <div class="benchmarking-table-container"> 
+                            <h3>Poisoning Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- poisoning -->
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>Step</th>
+                                        <th>Elapsed Seconds</th>
+                                        <th>CPU Usage (%)</th>
+                                        <th>Mean Reward</th>
+                                        <th>Standard Reward</th>
+                                        <th>Mean Latency (sec)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2025-10-17T00:53:09.777070Z</td>
+                                        <td>2000</td>
+                                        <td>80.74</td>
+                                        <td>49.1</td>
+                                        <td>20.36575198</td>
+                                        <td>12.49397104</td>
+                                        <td>0.726</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T00:54:35.422891Z</td>
+                                        <td>4000</td>
+                                        <td>166.39</td>
+                                        <td>54.6</td>
+                                        <td>23.65290754</td>
+                                        <td>7.709902953</td>
+                                        <td>0.893</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T00:56:02.172239Z</td>
+                                        <td>6000</td>
+                                        <td>253.14</td>
+                                        <td>56.8</td>
+                                        <td>19.96110543</td>
+                                        <td>9.278800234</td>
+                                        <td>0.726</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T00:57:30.613582Z</td>
+                                        <td>8000</td>
+                                        <td>341.58</td>
+                                        <td>60.5</td>
+                                        <td>17.98687864</td>
+                                        <td>7.544157489</td>
+                                        <td>0.632</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T00:58:58.187564Z</td>
+                                        <td>10000</td>
+                                        <td>429.15</td>
+                                        <td>56.4</td>
+                                        <td>24.11384942</td>
+                                        <td>8.636753808</td>
+                                        <td>0.879</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>Decremental Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- decremental -->
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>Step</th>
+                                        <th>Elapsed Seconds</th>
+                                        <th>CPU Usage (%)</th>
+                                        <th>Mean Reward</th>
+                                        <th>Standard Reward</th>
+                                        <th>Mean Latency (sec)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2025-10-17T01:17:03.155813Z</td>
+                                        <td>2000</td>
+                                        <td>66.81</td>
+                                        <td>50.2</td>
+                                        <td>10.88737718</td>
+                                        <td>3.173357991</td>
+                                        <td>0.327</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T01:18:14.332345Z</td>
+                                        <td>4000</td>
+                                        <td>137.99</td>
+                                        <td>53.9</td>
+                                        <td>26.55862686</td>
+                                        <td>7.730165263</td>
+                                        <td>0.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T01:19:30.206566Z</td>
+                                        <td>6000</td>
+                                        <td>213.87</td>
+                                        <td>55.1</td>
+                                        <td>15.52849950</td>
+                                        <td>10.43178253</td>
+                                        <td>0.513</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2025-10-17T01:20:49.430509Z</td>
+                                        <td>8000</td>
+                                        <td>293.09</td>
+                                        <td>54.9</td>
+                                        <td>33.04864794</td>
+                                        <td>5.663132086</td>
+                                        <td>1.05</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Text area -->
+                </section>
+            </main>
+
+        </div>
+        <script src="js/script.js"></script>
+        <footer>
+            <p>© 2025 Project B - Group 11</p>
+        </footer>
+    </body>
+</html>

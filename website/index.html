@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" >	
+        <meta charset="utf-8" > 
         <meta name="description" content="ICT30018 - Project B" >
         <meta name="keywords"    content="Highway, Adapdoor, Trading" >
         <meta name="author"      content="102089577 / Lewis John Basford" >
-        <link rel="stylesheet" href="css/style.css">
-        <title>Project B - Group 11</title>
+        <link rel="stylesheet" href="css/style.css"> <title>Project B - Group 11</title>
     </head>
     <body>
-        <!-- Top Navbar -->
+        <canvas id="matrix-canvas"></canvas>
+        <div class="matrix-background"></div>
+        <div class="content-overlay"></div>
+
         <header>
-            <div id="logo"> <!-- website logo -->
-                    <p>Project B - Group 11</p> 
+            <div id="logo"> <p>Project B - Group 11</p> 
             </div>
             <nav class="vscode-navbar">
-                <span class="tab active"><a href="index.html">HIGHWAY</a></span>
-                <span class="tab"><a href="adapdoor.html">ADAPDOOR</a></span>
-                <span class="tab"><a href="trading.html">TRADING</a></span>
+                <a class="tab active" href="index.html"><span>HOME</span></a>
+                <a class="tab" href="highway-jason.html"><span>HIGHWAY 1</span></a>
+                <a class="tab" href="highway-kalana.html"><span>HIGHWAY 2</span></a>
+                <a class="tab" href="anaconda.html"><span>ANACONDA</span></a>
+                <a class="tab" href="trading.html"><span>TRADING</span></a>
             </nav>
         </header>
 
-        <!-- Main Layout -->
-        <div class="main-layout">
-    
-            <!-- Vertical Sidebar -->
-            <aside class="side-nav">
-                <button class="side-btn active" data-section="trained">Trained / Unlearning</button>
-                <button class="side-btn" data-section="poisoned">Poisoned / Unlearned</button>
-                <button class="side-btn" data-section="decremental">Decremental</button>
-            </aside>
+        <section class="intro-section">
+            <div class="intro-grid">
+                <div class="intro-square">
+                    <h2>Introduction to Project</h2>
+                    <p>
+                        Our project aims to implement and reinforcement unlearning techniques across multiple environments.<br>
+                        The usage of multiple environments allows us to benchmark the effectiveness of these techniques in diverse scenarios.
+                    </p>
+                </div>
+                <div class="intro-square">
+                    <h2>Environments</h2>
+                    <p>
+                        We have selected three distinct environments to evaluate our reinforcement unlearning techniques:
+                        <ul>
+                            <li><strong>Highway Environment:</strong> A simulated driving environment where agents learn to navigate roads and traffic.</li>
+                            <li><strong>Anaconda Environment:</strong> A classic control problem where agents balance a pole on a cart.</li>
+                            <li><strong>Trading Environment:</strong> A financial market simulation where agents make trading decisions based on market data.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="intro-square">
+                    <h2>Reinforcement Learning</h2>
+                    <p>
+                        Reinforcement learning (RL) is a branch of machine learning where agents learn to make decisions by interacting with their environment, receiving feedback in the form of rewards or penalties. Through trial and error, agents develop strategies that maximize their cumulative reward over time.
+                    </p>
+                </div>
+                <div class="intro-square">
+                    <h2>Reinforcement Unlearning</h2>
+                    <p>
+                        Reinforcement unlearning is the process of removing data influence on an agent through various techniques.<br>
+                        We have selected three distinct techniques to implement and evaluate:
+                        <ul>
+                            <li><strong>Poisoning:</strong> Introducing misleading data during training to degrade the agent's performance on specific tasks.</li>
+                            <li><strong>Decremental Learning:</strong> Gradually removing certain experiences from the agent's memory to observe the impact on its learned behavior.</li>
+                            <li><strong>Interference:</strong> Applying perturbations to the agent's learning process to disrupt previously acquired knowledge.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            <!-- Main Content Area -->
-            <main class="content">
-                <!-- Trained / Unlearning Section -->
-                <section id="trained" class="section active">
-                    <div class="section-inner">
-                        <div class="gallery-container">
-                            <div class="gallery">
-                                <img src="images/highway/example1.png" class="active gallery-img" alt="Image 1">
-                                <img src="images/highway/example2.png" class="gallery-img" alt="Image 2">
-                                <img src="images/highway/example3.png" class="gallery-img" alt="Image 3">
-                            </div>
-                            <button class="arrow left">&#10094;</button>
-                            <button class="arrow right">&#10095;</button>
-                            <div class="dots"></div>
-                        </div>
-                        <p>[use this section to dotpoint benchmark data]</p>
-                    </div>
-                    <!-- Text area -->
-                    <div class="text-panel">
-                        <p>[trained - highway] [use this section to talk about the above images]</p>
-                    </div>
-                </section>
-
-                <!-- Poisoned / Unlearned Section -->
-                <section id="poisoned" class="section">
-                    <div class="section-inner">
-                        <div class="gallery-container">
-                            <div class="gallery">
-                                <img src="images/highway/example1.png" class="active gallery-img" alt="Image 1">
-                                <img src="images/highway/example2.png" class="gallery-img" alt="Image 2">
-                                <img src="images/highway/example3.png" class="gallery-img" alt="Image 3">
-                            </div>
-                            <button class="arrow left">&#10094;</button>
-                            <button class="arrow right">&#10095;</button>
-                            <div class="dots"></div>
-                        </div>
-                        <p>[use this section to dotpoint benchmark data]</p>
-                    </div>
-                    <!-- Text area -->
-                    <div class="text-panel">
-                        <p>[poisoned - highway] [use this section to talk about the above images]</p>
-                    </div>
-                </section>
-
-                <!-- Decremental Section -->
-                <section id="decremental" class="section">
-                    <div class="section-inner">
-                        <div class="gallery-container">
-                            <div class="gallery">
-                                <img src="images/highway/example1.png" class="active gallery-img" alt="Image 1">
-                                <img src="images/highway/example2.png" class="gallery-img" alt="Image 2">
-                                <img src="images/highway/example3.png" class="gallery-img" alt="Image 3">
-                            </div>
-                            <button class="arrow left">&#10094;</button>
-                            <button class="arrow right">&#10095;</button>
-                            <div class="dots"></div>
-                        </div>
-                        <p>[use this section to dotpoint benchmark data]</p>
-                    </div>
-                    <!-- Text area -->
-                    <div class="text-panel">
-                        <p>[decremental - highway] [use this section to talk about the above images]</p>
-                    </div>
-                </section>
-            </main>
-
-        </div>
-        <script src="js/script.js"></script>
         <footer>
-            <p>© 2025 Project B - Group 11</p>
+            &copy; 2025 Project B - Group 11
         </footer>
+
+        <script src="js/script.js"></script>
+        <script>
+        // Matrix-style background animation
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        const fontSize = 18;
+        const columns = Math.floor(width / fontSize);
+        const drops = Array(columns).fill(1);
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(30,30,30,0.7)';
+            ctx.fillRect(0, 0, width, height);
+            ctx.font = fontSize + 'px monospace';
+            ctx.fillStyle = '#00ff41';
+            for (let i = 0; i < columns; i++) {
+                const text = Math.random() > 0.5 ? '0' : '1';
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(drawMatrix, 50);
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        });
+        </script>
     </body>
 </html>

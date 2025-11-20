@@ -1,8 +1,57 @@
 /* --- Base --- */
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
-  background-color: rgb(230, 230, 230);
+  padding: 0;
+  background-color: #fff;
   font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+#logo {
+  padding-left: 20px;
+}
+
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: transparent;
+}
+.matrix-background, .content-overlay {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+header, .intro-section, footer {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    min-height: 0;
+    box-sizing: border-box;
 }
 
 /* --- Top Navbar --- */
@@ -29,6 +78,9 @@ body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   transition: background-color 0.15s ease, color 0.15s ease;
+  display: inline-block;    /* or block */
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 .vscode-navbar .tab:hover {
@@ -50,7 +102,8 @@ body {
 .main-layout {
   flex: 1;
   display: flex;
-  height: calc(100vh - 40px);
+  height: 100vh;
+  min-height: 100vh;
 }
 
 /* --- Vertical Sidebar --- */
@@ -62,6 +115,8 @@ body {
   padding: 12px;
   box-sizing: border-box;
   border-right: 1px solid #333;
+  height: 100%;
+  flex-shrink: 0;
 }
 
 .side-btn {
@@ -92,15 +147,28 @@ body {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
+  height: 100%;
+  overflow: visible;
 }
 
 /* Hide inactive sections */
 .section {
   display: none;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
 }
 
 .section.active {
   display: block;
+}
+
+.section-inner {
+  display: flex;
+  gap: 20px; /* space between gallery and text */
+  height: auto;
+  min-height: 0;
+  overflow: visible;
 }
 
 /* --- Gallery Styles --- */
@@ -117,13 +185,26 @@ body {
 
 .gallery img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 600px;
+  object-fit: contain;
   display: none;
   transition: opacity 0.5s ease-in-out;
 }
 
 .gallery img.active {
+  display: block;
+  opacity: 1;
+}
+
+.gallery video {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery video.active {
   display: block;
   opacity: 1;
 }
@@ -184,6 +265,51 @@ body {
   flex: 2; /* takes 2/3 of the space */
 }
 
+.benchmarking-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* VS Code themed table */
+.vscode-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Consolas, "Courier New", monospace;
+    background-color: #1e1e1e;
+    color: #ccc;
+    border: 1px solid #333;
+}
+
+.vscode-table th {
+    background-color: #252526;
+    color: #ccc;
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.vscode-table td {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+}
+
+.vscode-table tr:nth-child(even) {
+    background-color: #2d2d30;
+}
+
+.vscode-table tr:hover {
+    background-color: #3a3d41;
+}
+
+.vscode-table td,
+.vscode-table th {
+    white-space: nowrap;
+}
+
+
 /* Text panel on the right */
 .text-panel {
   flex: 1; /* takes 1/3 of the space */
@@ -201,3 +327,64 @@ footer {
   font-size: 11px;
   text-align: center;
 }
+
+.intro-section {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+    width: 100%;
+    margin-top: 40px; /* space below navbar */
+    box-sizing: border-box;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.intro-square {
+    background: rgba(34, 34, 34, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    padding: 32px 28px;
+    width: 340px;
+    height: 240px;
+    min-height: 240px;
+    max-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #e0e0e0;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.intro-square h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.intro-square h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.intro-square ul {
+    margin: 0;
+    padding-left: 18px;
+}
+

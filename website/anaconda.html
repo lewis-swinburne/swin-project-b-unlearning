@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >	
+        <meta name="description" content="ICT30018 - Project B" >
+        <meta name="keywords"    content="Highway, Adapdoor, Trading" >
+        <meta name="author"      content="102089577 / Lewis John Basford" >
+        <link rel="stylesheet" href="css/style.css">
+        <title>Project B - Group 11</title>
+    </head>
+    <body>
+        <!-- Top Navbar -->
+        <header>
+            <div id="logo"> <!-- website logo -->
+                    <p>Project B - Trading Environment</p> 
+            </div>
+            <nav class="vscode-navbar">
+                <a class="tab" href="index.html"><span>HOME</span></a>
+                <a class="tab" href="highway-jason.html"><span>HIGHWAY 1</span></a>
+                <a class="tab" href="highway-kalana.html"><span>HIGHWAY 2</span></a>
+                <a class="tab active" href="anaconda.html"><span>ANACONDA</span></a>
+                <a class="tab" href="trading.html"><span>TRADING</span></a>
+            </nav>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+    
+            <!-- Vertical Sidebar -->
+            <aside class="side-nav">
+                <button class="side-btn active" data-section="trained">Trained Agent</button>
+                <button class="side-btn" data-section="interference">Interference Applied</button>
+                <button class="side-btn" data-section="benchmarking">Benchmarking Statistics</button>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="content">
+                <!-- Trained -->
+                <section id="trained" class="section active">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <video src="images/anaconda/trained/ppo_cart_ab_B-episode-0.mp4" controls autoplay preload="auto" class="active gallery-img"></video>
+                                <video src="images/anaconda/trained/ppo_cart_ab_B-episode-1.mp4" controls autoplay preload="auto" class="gallery-img"></video>
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>OS: Windows 11 Pro</li>
+                                <li>CPU: Intel i5-10400</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            The above is a cart pole game based in the Anaconda environment.<br>
+                            The agent has been trained to balance the pole for as long as possible by moving the cart left or right based on the pole's angle and position.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- interference -->
+                <section id="interference" class="section">
+                    <div class="section-inner">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <video src="images/anaconda/interference/ppo_cart_unlearnA_B-episode-0.mp4" controls autoplay preload="auto" class="active gallery-img"></video>
+                                <video src="images/anaconda/interference/ppo_cart_unlearnA_B-episode-1.mp4" controls autoplay preload="auto" class="gallery-img"></video>
+                            </div>
+                            <button class="arrow left">&#10094;</button>
+                            <button class="arrow right">&#10095;</button>
+                            <div class="dots"></div>
+                        </div>
+                        <p>
+                            <ul>
+                                <h3>Component Specifications</h3>
+                                <li>OS: Windows 11 Pro</li>
+                                <li>CPU: Intel i5-10400</li>
+                                <li>RAM: 32 GB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- Text area -->
+                    <div class="text-panel">
+                        <p>
+                            An environmental interference attack is based on making changes to the environment in which the agent operates.<br>
+                            Our goal was to disrupt the agent's ability to balance the pole by altering environmental parameters during its operation.<br>
+                            Thus, distancing the agent from the data it was trained on.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Benchmarking Section -->
+                <section id="benchmarking" class="section">
+                    <div class="section-inner">
+                        <div class="benchmarking-table-container"> 
+                            <h3>Training Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- training -->
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>CPU Usage (%)</th>
+                                        <th>RAM Usage (MB)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2025-11-03T19:10:22</td><td>60.7</td><td>297.2</td></tr>
+                                    <tr><td>2025-11-03T19:10:30</td><td>55.0</td><td>297.4</td></tr>
+                                    <tr><td>2025-11-03T19:10:40</td><td>54.6</td><td>297.6</td></tr>
+                                    <tr><td>2025-11-03T19:10:50</td><td>57.3</td><td>297.8</td></tr>
+                                    <tr><td>2025-11-03T19:10:57</td><td>64.9</td><td>298.1</td></tr>
+                                </tbody>
+                            </table>
+                            <h3>Interference Benchmark Data</h3>
+                            <table class="vscode-table"> <!-- interference -->
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>CPU Usage (%)</th>
+                                        <th>RAM Usage (MB)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2025-11-03T19:11:11</td><td>38.4</td><td>296.9</td></tr>
+                                    <tr><td>2025-11-03T19:11:20</td><td>33.9</td><td>297.2</td></tr>
+                                    <tr><td>2025-11-03T19:11:30</td><td>24.7</td><td>297.4</td></tr>
+                                    <tr><td>2025-11-03T19:11:40</td><td>20.4</td><td>297.6</td></tr>
+                                    <tr><td>2025-11-03T19:11:45</td><td>26.2</td><td>297.6</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Text area -->
+                </section>
+            </main>
+
+        </div>
+        <script src="js/script.js"></script>
+        <footer>
+            <p>© 2025 Project B - Group 11</p>
+        </footer>
+    </body>
+</html>
